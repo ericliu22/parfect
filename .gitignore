@@ -1,0 +1,6 @@
+*.pem
+*.env
+*.log
+node_modules
+target
+data

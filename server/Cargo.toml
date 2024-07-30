@@ -1,0 +1,18 @@
+[package]
+name = "server"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+axum = "0.7.5"
+axum-extra = { version = "0.9.3", features = ["cookie"] }
+bb8 = "0.8.5"
+bcrypt = "0.15.1"
+diesel = { version = "2.2.2", features = ["uuid"] }
+diesel-async = { version = "0.5.0", features = ["bb8", "postgres"] }
+dotenv = "0.15.0"
+jsonwebtoken = "9.3.0"
+serde = "1.0.204"
+tokio = { version = "1.39.2", features = ["full"] }
